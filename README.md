@@ -8,10 +8,14 @@
 
 ## 👨🏽‍💻 Tecnologias Principais:
 ![Python](https://img.shields.io/badge/Python-yellow?style=flat&logo=python)
-![SQL_Oracle](https://img.shields.io/badge/SQL_Oracle-red?style=flat&logo=oracle)
+![SQL](https://img.shields.io/badge/SQL_Oracle-red?style=flat&logo=Mysql)
 ![HTML5](https://img.shields.io/badge/HTML5-orange?style=flat&logo=html5)
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=flat&logo=css3)
+![Tux Linux](https://img.shields.io/badge/Linux-green?style=flat&logo=linux&logoColor=white)
+
+
+
 
 ## 📬 Contatos:
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin)](https://www.linkedin.com/in/joão-queiroz-687844237)
-[![Email](https://img.shields.io/badge/-Email-red?style=flat&logo=Gmail)](mailto:Queirozjoaovictor16@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/joão-queiroz-687844237)  
+[![Email](https://img.shields.io/badge/-Email-red?style=flat&logo=gmail)](mailto:Queirozjoaovictor16@gmail.com)
