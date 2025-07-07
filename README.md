@@ -7,12 +7,11 @@
 🚀 Sempre buscando novos desafios e aprimorando minhas habilidades(Rumo ao topo🚩) 
 
 ## 👨🏽‍💻 Tecnologias Principais:
-![Python](https://img.shields.io/badge/Python-yellow?style=flat&logo=python)
-![SQL](https://img.shields.io/badge/SQL_Oracle-red?style=flat&logo=Mysql)
-![HTML5](https://img.shields.io/badge/HTML5-orange?style=flat&logo=html5)
-![CSS3](https://img.shields.io/badge/CSS3-blue?style=flat&logo=css3)
+![Python](https://img.shields.io/badge/Python-yellow?style=flat&logo=python)  
+![SQL](https://img.shields.io/badge/SQL_Oracle-red?style=flat&logo=Mysql)  
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)  
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)  
 ![Tux Linux](https://img.shields.io/badge/Linux-green?style=flat&logo=linux&logoColor=white)
-
 
 
 
