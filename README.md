@@ -2,8 +2,8 @@
 
 ⚙ Formado em **Gestão de TI**  
 🔐 Estudando **Segurança da Informação** e **Desenvolvimento Seguro**  
-💻 Linguagens que ja tarbalho  **Python, SQL (Oracle), HTML e CSS**  
-📝 Linguagens que estou estudando atualmente **C++ e C#**  
+💻 Linguagens que ja desenvolvo atualmente  **Python, SQL (Oracle), C++ e C#**  
+📝 Estudando atualmente **cybersecurity** e **analise forence difital**  
 🚀 Sempre buscando novos desafios e aprimorando minhas habilidades(Rumo ao topo🚩) 
 
 ## 👨🏽‍💻 Tecnologias Principais:
