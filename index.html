@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jv - Meu Portifólio</title>
+<!-- Adição do serviço que vai conter as fontes que preciso
+DM serif Display, DM Mono e Outfit 
+-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <!--Classe com apetas um elemento dentro -->
+        <div class="wrapper">
+            <div class="header-top">
+                <!--Parte da esquerda(nome e bio)-->
+                <div class="header-identity">
+                
+                    <!--Habilitar o open to work
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        Disponível para oportunidades
+                    </div>-->
+                
+                    <h1 class="hero-name">
+                        <em>João Victor Queiroz</em>
+                    </h1>
+                    
+                    <p class="hero-role">Analista de suporte de TI | Developer Fullstak</p>
+
+                    <p class="hero-bio">
+                        Formado em Tecnologia da Informação com experiência em suporte técnico, análise de sistemas ERP e infraestrutura, atuando na resolução de incidentes, troubleshooting e atendimento a usuários.<br>
+                        Possui conhecimentos em banco de dados, implantação, financeiro, redes, sistemas operacionais Linux/Windows Server e segurança da informação, com foco em otimização de processos e monitoramento
+                    </p>
+                </div>
+                <!--Parte da direita(contatos)-->
+                <div class="header-meta">
+                    <div class="Endereco">São Paulo, SP - 08050-130</div>
+                    <div class="email_tel">Queirozjoaovictor16@gmail.com | (11)99833-5166</div>
+                    <div class="git">github.com/0o-J0ta</div>
+
+                </div>
+
+            </div>
+
+            <!--Botões guias do menu-->
+            <!-- O href define o destino. Quando começa com #, significa que vai para um elemento com aquele id na mesma página -->
+            <div class="header-actions">
+                <!--Classe com dois elemetos dentro dela class="btn btn-accent e tbm a parte dos link que vou ter na minha pag-->
+                <a href="#contato" class="btn btn-accent">Entre em contato comigo</a>
+                <a href="#projetos" class="btn btn-ghost">Ver projetos</a>
+                <button onclick="imprimir()" class="btn btn-ghost">Imprimir PDF</button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <nav class="tabs">
+        <div class="wrapper">
+            <div class="tabs-inner">
+            <!--class="tab-link active" — Este link tem duas classes. A classe active será usada pelo 
+            CSS para destacar a aba atual e pelo JavaScript para controlar qual aba está selecionada.
+            <nav> — Tag semântica para menus de navegação.-->
+                <a class="tab-link active" href="#sobre">Sobre</a>
+                <a class="tab-link" href="#experiencia">Experiência</a>
+                <a class="tab-link" href="#projetos">Projetos</a>
+                <a class="tab-link" href="#skills">Skills</a>
+                <a class="tab-link" href="#formacao">Formação</a>
+                <a class="tab-link" href="#contato">Contato</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="sobre">
+        <div class="wrapper">
+            <p class="section-label">// 01 - Sobre</p>
+            <h2 class="section-title">Quem é João Queiroz?</h2>
+
+            <div class="sobre-grid">
+                <p>Sou desenvolvedor Full Stack com 6 anos de experiência
+                construindo aplicações web e mobile de alta performance.</p>
+                
+                <p>Minha abordagem combina pragmatismo técnico com atenção
+                ao detalhe. Acredito que bom código não é só código que
+                funciona — é código que outras pessoas conseguem entender.</p>
+            </div>
+
+            <!--Cards de informações add-->
+            <div class="sobre-card">
+                <h3>Localização</h3>
+                <p>São Paulo, SP<br>Disponivel para Cargos remotos</p>
+            </div>
+
+            <div class="sobre-card">
+                <h3>Idiomas</h3>
+                <p>Português(Brasil) - Nativo<br>Inglês - Intermediario</p>
+
+            </div>
+            
+            <div class="sobre-card">
+                <h3>Interesses</h3>
+                <p>Open Source | Desenvolvimento back-end | Analise de Dados
+                </p>
+
+            </div>
+
+        </div>
+        <!--<section id="sobre"> — Tag semântica para seções temáticas da página. O atributo id="sobre" é o "endereço" único desta seção. 
+            É exatamente este id que o link <a href="#sobre"> usa para navegar até aqui. 
+            Regra de ouro: cada id deve ser único na página inteira. -->
+    </section>
+
+    <section id="experiencia">
+        <div class="wrapper">
+            <p class="section-label">// 02 - Experiências</p>
+            <h2 class="section-title"> Trajetórioa proficional</h2>
+
+            <div class="exp-list">
+
+            <!--Info sobre minhas experiências-->
+                <div class="exp-item">
+
+                    <div class="exp-logo">MI</div>
+
+                    <div class="exp-content">
+                        <div class="exp-top">
+                            <span class="exp-cargo">Estrutor de Hardware</span>
+                            <span class="exp-periodo">01/2023 - 04/2023</span>
+                        </div>
+                        <div class="exp-empresa">Millennium Tecnologia - Poá, SP</div>
+                        <p class="exp=desc"> - Ensino técnico de manutenção, diagnóstico e troubleshooting de hardware.<br>- Planejamento de aulas práticas e teóricas.<br>- Introdução à programação em C++ com Arduino para projetos embarcados.</p>
+
+                        <div class="exp-tags">
+                            <span class="tag">People management</span>
+                             <span class="tag">Hardware</span>
+                            <span class="tag">Manutenção de Computadores</span>
+                            <span class="tag">Diagnóstico Técnico</span>
+                            <span class="tag">Troubleshooting</span>
+                            <span class="tag">Didática</span>
+                            <span class="tag">Planejamento de Aulas</span>
+                            <span class="tag">Arduino</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Sistemas Embarcados</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="exp-item">
+                    <div class="exp-logo"><br>INCO</div>
+
+                    <div class="exp-content">
+                        <div class="exp-top">
+                            <span class="exp-cargo">Analista de Suporte Computacional</span>
+                            <span class="exp-periodo">06/2023 - Atual</span>
+                        </div>
+                        <div class="exp-empresa">Incosystem Soluções em ERP - Áruja, SP</div>
+                        <p class="exp=desc"> - Atendimento técnico via telefone, e-mail e acesso remoto (AnyDesk,TeamViewer, RustDesk).<br>
+                                            - Suporte funcional e técnico em módulos ERP: financeiro, fiscal, CRM, logística e estoque.<br>
+                                            - Monitoramento e análise de emissão de documentos fiscais (NF-e, CT-e, NFSe).<br>
+                                            - Parametrização fiscal (CFOP, impostos) e validações junto à SEFAZ.<br>
+                                            - Análise de fluxo financeiro: contas a pagar/receber e geração de arquivos CNAB.<br>
+                                            - Criação e otimização de queries SQL para análise de dados.<br>
+                                            - Manutenção e ajustes em banco de dados MySQL.<br>
+                                            - Monitoramento de serviços e servidores para testes, simulações e troubleshooting.<br>
+                                            - Apoio em implantação de sistemas e onboarding de clientes.</p>
+
+                        <div class="exp-tags">
+                            <span class="tag">Hardware</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Technical Support</span>
+                            <span class="tag">Linux/Windows Server</span>
+                            <span class="tag">Help Desk</span>
+                            <span class="tag">N1 N2 Support</span>
+                            <span class="tag">ERP Systems</span>
+                            <span class="tag">CRM Systems</span>
+                            <span class="tag">Remote Support</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Database Management</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">NF-e | CT-e | NFS-e</span>
+                            <span class="tag">XML</span>
+                            <span class="tag">Accounts Receivable</span>
+                            <span class="tag">System Monitoring</span>
+                            <span class="tag">Server Monitoring</span>
+                            <span class="tag">Troubleshooting</span>
+                            <span class="tag">System Implementation</span>
+                            <span class="tag">Customer Onboarding</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+<!--Projetos e skills-->
+    <section id="projetos">
+        <div class="wrapper">
+            <p class="section-label">// 03 - Meus projetos</p>
+            <h2 class="section-title">O que construi</h2>
+
+            <div class="proj-grid">
+
+                <div class="proj-card">
+                    <div class="proj-icon">🖥</div>
+                    <h3 class="proj-title">CRUD with Python</h3>
+                    <p class="proj-desc">Sistema de manipulação e criação de produtos utilizando apenas a linguagem Pyrhon</p>
+                    <div class="proj-tags">
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <!--Se for para adicioaar outros projetos futuramente continue nesta identação-->
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="wrapper">
+            <p class="section-label">// 04 - Skills</p>
+            <h2 class="section-title">Ferramentas & Tecnologias</h2>
+
+            <div class="skills-group">
+                <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <span class="skill-name-col">JavaScript</span>
+                       <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="60"
+                                style="background: #c8f05a"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name-col">React</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="50"
+                                style="background: #c8f05a"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-name-col">50%</span>
+                    <!--Conceito novo importantíssimo:
+                    data-w="95" — Isso é um atributo de dados personalizado (custom data attribute). 
+                    O prefixo data- seguido de qualquer nome cria um lugar para guardar informação no HTML. O JavaScript vai ler esse valor depois para saber até quanto a barra deve crescer-->
+                    </div>
+                    <!--Se for para adicioaar outras skills futuramente continue nesta identação-->
+
+            </div>
+            <div class="skills-group">
+                <h3>Backend</h3>
+                    <div class="skill-item">
+                        <span class="skill-name-col">Python</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="70"
+                                style="background: #5afaaf"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name-col">SQL</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="50"
+                                style="background: #5afaaf"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">50%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name-col">C++</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="50"
+                                style="background: #5afaaf"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">50%</span>
+                    </div>
+            </div>
+            <div class="skills-group">
+                <h3>Devops</h3>
+                    <div class="skill-item">
+                        <span class="skill-name-col">Linux</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="60"
+                                style="background: #5afaaf"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name-col">AWS</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="40"
+                                style="background: #5afaaf"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">40%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name-col">Infraestrutura e redes</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="60"
+                                style="background: #5afaaf"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name-col">Cybersecurity</span>
+                        <!--<div class="skill-bar-wrap">
+                            <div class="skill-fill" data-w="70"
+                                style="background: #5afaaf"></div> Depois tenho que revisar uma forma de colocar essa opção de cor valida dentro dele
+                        </div>-->
+                        <span class="skill-pct-col">70%</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="formacao">
+        <div class="wrapper">
+            <p class="section-label">// 05 - Educação</p>
+            <h2 class="section-title">Formação acadêmica</h2>
+
+            <div class="edu-list">
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Tecnologo em Gestão em Tecnologia da Informação</div>
+                        <div class="edu-school">Universidade Cruzeiro do Sul</div>
+                        <div class="edu-detail">2022 - 2023</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Segurança da Informação</div>
+                        <div class="edu-school">Universidade Cruzeiro do Sul(EAD)</div>
+                        <div class="edu-detail">2025 - 2026</div>
+                    </div>
+                    <span class="edu-badge edu-badge-yellow">Cursando</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">Certificações</h2>
+
+            <div class="edu-list">
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Informatica Avançada</div>
+                        <div class="edu-school">Microcamp</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Especialista em redes e TI</div>
+                        <div class="edu-school">Millennium Tecnologia</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Especialista em redes e TI</div>
+                        <div class="edu-school">Millennium Tecnologia</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Fundamentos AWS</div>
+                        <div class="edu-school">Escola da Nuvem</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Linux</div>
+                        <div class="edu-school">Curso em vídeo/FIAP</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Python</div>
+                        <div class="edu-school">Curso em vídeo/FIAP</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">Cybersecurity</div>
+                        <div class="edu-school">FIAP</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+                <div class="edu-item">
+                    <div>
+                        <div class="edu-degree">LGPD</div>
+                        <div class="edu-school">Santander</div>
+                    </div>
+                    <span class="edu-badge edu-badge-green">Concluido</span>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section id="contato">
+        <div class="wrapper">
+            <p class="section-label">//06 - contato</p>
+            <h2 class="section-title">Vamos conversar</h2>
+
+            <div class="contato-grid">
+                <a class="contato-card" href="queirozjoaovictor16@gmail.com">
+                    <div class="contato-icon">✉️</div>
+                    <div>
+                        <div class="contato-label">E-mail</div>
+                        <div class="cotato-value">Queirozjoaovictor16@gmail.com</div>
+                    </div>
+                </a>
+
+                <a class="contato-card" href="https://www.linkedin.com/in/jo%C3%A3o-queiroz/">
+                    <div class="contato-icon">💼</div>
+                    <div>
+                        <div class="contato-label">LinkedIn</div>
+                        <div class="contato-value">LinkedIn.com/in/João Queiroz</div>
+                    </div>
+                </a>
+            </div>
+            <!--Possibilidade de colocar o formulario para envio de mensagem aqui em seguida-->
+            <div class="form -section">
+                <h3>Envie um mensagem</h3>
+
+                <div class="form-row">
+                    <div class="from-group">
+                        <!--<label for="f-nome"> — Etiqueta de um campo de formulário. 
+                            O atributo for deve ter o mesmo valor que o id do input correspondente. Isso conecta os dois: clicar no label já coloca o cursor no input.-->
+                        <label for="f-nome">Nome:</label>
+                        <input type="text" id="f-home" placeholder="Seu nome completo">
+                    </div>
+                    <div class="from-group">
+                        <label for="f-email">E-mail:</label>
+                        <input type="email" id="f-email" placeholder="seu@email.com">
+                    </div>
+                </div>
+
+                <div class="from-group">
+                    <label for="f-assunto">Assunto:</label>
+                    <select id="f-assunto">
+                        <option value="">Selecione o tipo de contato</option>
+                        <option>Proposta CLT</option>
+                        <option>Proposta de Estagio</option>
+                        <option>Proposta de Freelance</option>
+                        <option>Outras</option>
+                    </select>
+                </div>
+                <div class="from-group">
+                    <label for="f-msg">Mensagem:</label>
+                    <textarea name="msg" id="f-msg" placeholder="Escreva uma mensagem...">
+                    </textarea>
+                    <!--<textarea> — Campo de texto de múltiplas linhas. 
+                        placeholder — Texto cinza que aparece dentro do campo quando está vazio, para dar dica ao usuário. -->
+                </div>
+
+                <div class="form-submit-row">
+                    <button class="btn btn-accent" onclick="enviarform()">
+                        Enviar mensagem
+                    </button>
+                </div>
+                <div class="toast-msg" id="toast-form">
+                   <!-- ✅ Mensagem enviada com sucesso!-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <p>&copy;jv</p>
+            <p>"A fé na vitoria tem que ser inabalavel!"</p>
+        </div>
+    </footer>
+    <div class="wrapper" id="topo" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        ↑
+    </div>
+    
+
+
+
+
+    <script src='script.js'></script>
+</body>
+</html>

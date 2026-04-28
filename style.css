@@ -1,0 +1,339 @@
+/* Remoção das margens e paddings padrão que cada navegador
+   define de forma diferente.*/
+
+
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/*O "*" É como um seletor universal que aplica o estilo em todos os elemetos da página.
+O box-sizing: border-box muda como o CSS calcula o tamanho dos elementos. Em resumo ele tirar a formatação padrão que o site tem.
+fontes:
+https://pt.stackoverflow.com/questions/463/como-resetar-a-formata%C3%A7%C3%A3o-do-css
+https://www.devmedia.com.br/como-utilizar-a-tecnica-css-reset/26797*/
+
+/*VARIAVEIS*/
+
+/* :root representa o elemento raiz da página (o <html>).
+   Variáveis declaradas aqui ficam disponíveis em
+   qualquer lugar do CSS. */
+
+:root{
+    --bg: #0e0f11;
+    --surface: #16181c;
+    --surface2: #1e2128;
+    --border: rgba(255, 255, 255, 0.07);
+    --border2: rgba(255, 255, 255, 0.13);
+    --accent: #c8f05a;
+    --accent2: #5afaaf;
+    --accent3: #fa9c5a;
+    --text: #f0ede8;
+    --muted: #7a7d85;
+    --muted2: #545760;
+
+    /* Fontes */
+    --serif: 'DM Serif Display', serif;
+    --mono: 'DM Mono', monospace;
+    --sans: 'Outfit', sans-serif;
+}
+
+/*Nessa parte eu basicamente to dizendo que quando eu for colocar o backgroud-color eu posso
+simplismente ao inves de ir atrás dessa cor eu posso colocar a variavel assim:
+background-color: var(--bg)
+fontes:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference/Selectors/:root
+https://cursos.alura.com.br/forum/topico-funcionalidade-root-294583;
+
+assim ele vai acatar o que eu tiver colocado dentro da minha variavel
+(IMPORTANTE: SE ALTERAR ALGO DENTRO DO ROOT, VAI ALTERAR EM TODO LUGAR QUE A VARIAVEL ESTIVER)*/
+
+html{
+    scroll-behavior: smooth;
+    /*Faz o scroll para âncoras (#sobre, #projetos, #contato, #experiencia, #skills e #formacao)*/
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.65;
+    overflow-x: hidden;
+    /*overflow-x: hidden = esconde o scroll horizontal
+     para evitar que elementos desalinhados criem
+     uma barra de scroll feia na parte inferior */
+}
+
+/*Centralização*/
+.wrapper{
+    max-width: 900px;
+    /*Lagura limite de 900px*/
+    margin: 0  auto;
+    padding: 0 2rem;
+    /* espaço interno lateral para não colar nas bordas */
+    position: relative;
+    z-index: 1;
+    /*position: relative permite usar z-index, que controla qual elemento fica "em cima" de qual (como camadas). Valores maiores ficam na frente.*/
+}
+
+header{
+    padding: 3.5rem 0 0;
+    /* padding: topo direita-esquerda baixo
+     3.5rem em cima, 0 nos lados, 0 embaixo */
+    border-bottom: 1px solid var(--border);
+    /*Primeira borda */
+}
+
+.header-top{
+    /*Quando tem o display: flex em um elemento, ele se torna um "container flex" e seus filhos diretos se tornam "itens flex".*/
+    display: flex;
+    /* Flexbox: coloca os filhos lado a lado */
+    justify-content: space-between;
+    /* Empurra o primeiro filho para a esquerda
+     e o último para a direita */
+    align-items: flex-start;
+    /* Alinha os filhos pelo topo (não pelo centro) */
+    gap: 2rem;
+    /*Espaço entre os itens flex */
+    flex-wrap: wrap;
+    /* Se não couber na linha, quebra para a linha de baixo
+     (importante para responsividade mobile) */
+    margin-bottom: 2.5rem;
+
+}
+
+/*QUANDO HABILITAR O OPEN TO WORK
+/* O pílula de status (ponto verde piscando) */
+.status-pill{
+    display: inline-flex;
+    /* inline-flex = flex mas fica em linha com o texto */
+    align-items: center;
+    gap: 7px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent2);
+    border: 1px solid rgba(90, 250, 175, 0.25);
+    padding: 5px 12px;
+    border-radius: 99px;
+    /* border-radius muito alto = forma de pílula/cápsula */
+    margin-bottom: 1.25rem;
+}
+
+.status-dot{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    /* 50% = círculo perfeito */
+    background: var(--accent2);
+    animation: pulse 2s infinite;
+    /* animation: nome-da-animação duração repetição */
+}
+*/
+
+/* Nome e cargo */
+.hero-name{
+    font-family: var(--serif);
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    /* clamp(mínimo, ideal, máximo)
+    = mínimo 2.8rem, ideal 7% da largura da tela,
+    máximo 4.5rem. Responsivo automático! */
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    /* Aproxima as letras levemente — visual elegante */
+    margin-bottom: 0.5rem;
+}
+
+.hero-name em{
+    /* Seleciona o <em> que está DENTRO de .hero-name */
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* Estilo base que todos os botões compartilham */
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    /* cursor: pointer = cursor vira a "mão" ao passar por cima */
+    text-decoration: none;
+    /* Remove o sublinhado padrão de links <a> */
+    transition: all 0.18s;
+    /* transition: o-que-transicionar duração
+     "all" = anima qualquer propriedade que mude
+     0.18s = duração da animação */
+     border: none;
+}
+
+.btn-accent{
+    background: var(--accent);
+    color: #0e0f11;
+}
+
+.btn-accent:houver{
+    /* :hover = aplica este estilo quando o mouse
+     está em cima do elemento */
+     background: #d8ff6a;
+     transform: translate(-1px);
+    /* Move 1px para cima — efeito de "levantar" */
+}
+
+.btn-ghost{
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border2);
+}
+
+.btn-ghost:houver{
+    background: var(--surface2);
+}
+
+/*A NAV de abas*/
+
+nav.tabs {
+  position: sticky;
+  /* sticky = o elemento "gruda" na tela quando
+     o usuário rola até ele. Fica fixo no topo
+     enquanto você está naquele trecho da página. */
+  top: 0;
+  z-index: 100;
+  /* fica na frente de tudo com z-index alto */
+  background: rgba(14, 15, 17, 0.92);
+  /* cor de fundo com 92% de opacidade (8% transparente) */
+  backdrop-filter: blur(12px);
+  /* Efeito de vidro fosco — borra o que está atrás */
+  border-bottom: 1px solid var(--border);
+}
+
+.tabs-inner {
+  display: flex;
+  overflow-x: auto;
+  /* Se as abas não couberem, permite scroll horizontal */
+  scrollbar-width: none;
+  /* Esconde a barra de scroll no Firefox */
+}
+
+.tabs-inner::-webkit-scrollbar {
+  display: none;
+  /* Esconde a barra de scroll no Chrome/Safari */
+}
+
+.tab-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 15px 22px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  /* Borda transparente já ocupa o espaço,
+     para não "pular" quando ficar colorida */
+  transition: all 0.18s;
+  white-space: nowrap;
+  /* Não quebra o texto em duas linhas */
+  cursor: pointer;
+}
+
+.tab-link:hover {
+  color: var(--text);
+}
+
+.tab-link.active {
+  /* Aplica quando o JavaScript adiciona a classe "active" */
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/*Animação de entrada das seções
+
+section {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border);
+
+  /* Estado inicial: invisível e deslocada 
+  opacity: 0;
+  transform: translateY(24px);
+  /* translateY(24px) = move 24 pixels para baixo 
+
+  transition: opacity 0.55s ease, transform 0.55s ease;
+  /* Quando opacity ou transform mudarem,
+     a mudança será animada em 0.55 segundos 
+}
+
+section.visible {
+  /* Quando o JavaScript adicionar a classe "visible",
+     a seção vai para o estado final com animação 
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  margin-bottom: 2.5rem;
+}*/
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Duas colunas de tamanho igual
+     1fr = 1 fração do espaço disponível */
+  gap: 1.5rem;
+}
+
+.sobre-main {
+  grid-column: 1 / -1;
+  /* Ocupa da coluna 1 até a última (-1)
+     = ocupa TODA a largura do grid */
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.sobre-main p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.sobre-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.sobre-card h3 {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.sobre-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.75;
+}
