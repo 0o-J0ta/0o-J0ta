@@ -272,7 +272,7 @@ nav.tabs {
 
 .tabs-inner::-webkit-scrollbar {
   display: none;
-  /* Esconde a barra de scroll no Chrome/Safari */
+  /* Esconde a barra de scroll no Chrome*/
 }
 
 .tab-link {
@@ -667,16 +667,22 @@ section {
   border-radius: 99px;
 }
 
-.edu-badge-green {
+.edu-badge-cursando {
   background: rgba(200, 240, 90, 0.1);
   color: var(--accent);
-  border: 1px solid rgba(200, 240, 90, 0.25);
+  border: 1px solid rgba(200, 245, 75, 0.25);
 }
 
-.edu-badge-teal {
+.edu-badge-concluida {
   background: rgba(90, 250, 175, 0.1);
   color: var(--accent2);
-  border: 1px solid rgba(90, 250, 175, 0.25);
+  border: 1px solid rgba(90, 250, 125, 0.25);
+}
+
+.edu-badge-certificado {
+  background: rgba(90, 186, 250, 0.1);
+  color: var(--accent2);
+  border: 1px solid rgba(90, 178, 250, 0.25);
 }
 
 /* CONTATO */
@@ -684,7 +690,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .contato-card {
@@ -705,9 +710,37 @@ section {
   transform: translateY(-2px);
 }
 
-.contato-icon { font-size: 24px; }
-.contato-label { font-size: 11px; color: var(--muted); font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 3px; }
-.contato-value { font-size: 14px; font-weight: 500; color: var(--text); }
+.contato-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contato-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.contato-label { 
+    font-size: 11px; 
+    color: var(--muted); 
+    font-family: var(--mono); 
+    text-transform: uppercase; 
+    letter-spacing: 0.08em; 
+    margin-bottom: 3px; 
+}
+
+.contato-value { 
+    font-size: 14px; 
+    font-weight: 500;
+    color: var(--text); 
+}
 
 /* FORMULÁRIO */
 .form-section {
@@ -715,6 +748,7 @@ section {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 2rem;
+  margin-top: 2rem;
 }
 
 .form-section h3 {
@@ -735,6 +769,18 @@ section {
   flex-direction: column;
   gap: 6px;
   margin-bottom: 12px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 14px;
+    color: var(--text);
+    font-family: var(--sans);
+    outline: none;
+    transition: border-color 0.18s;
 }
 
 .form-group label {
@@ -797,6 +843,7 @@ section {
 /*Footer, botão de topo e responsividade*/
 
 /* FOOTER */
+
 footer {
   padding: 2.5rem 0;
   display: flex;
@@ -810,6 +857,15 @@ footer p {
   color: var(--muted2);
   font-family: var(--mono);
 }
+
+element.style {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 
 /* BOTÃO VOLTAR AO TOPO */
 #scrolltop {
