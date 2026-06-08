@@ -102,19 +102,6 @@ joao_queiroz = {
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=SEU_USER_AQUI&show_icons=true&theme=dark&include_all_commits=true&count_private=true&title_color=e63946&icon_color=e63946&text_color=ffffff&bg_color=0d0d0d&border_color=1a1a2e"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USER_AQUI&layout=compact&langs_count=7&theme=dark&title_color=e63946&text_color=ffffff&bg_color=0d0d0d&border_color=1a1a2e"/>
-</div>
-
----
-
-
-
-<div align="center">
-
 ### 📬 Bora trocar ideia?
 
 [![Email](https://img.shields.io/badge/Email-Queirozjoaovictor16%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Queirozjoaovictor16@gmail.com)
