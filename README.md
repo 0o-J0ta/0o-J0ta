@@ -98,6 +98,7 @@ joao_queiroz = {
     <img src="https://img.shields.io/badge/TeamViewer-0E8EE9?style=for-the-badge&logo=teamviewer&logoColor=white"/>
     <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
     <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Shell_Script-0a0a0a?style=for-the-badge&logo=gnubash&logoColor=00cfff"/>
 </div>
 
 ---
