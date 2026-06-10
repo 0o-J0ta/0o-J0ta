@@ -73,7 +73,6 @@ joao_queiroz = {
     <img src="https://img.shields.io/badge/Threat_Management-1a1a2e?style=for-the-badge&logo=cisco&logoColor=white"/>
     <img src="https://img.shields.io/badge/Nmap-0d0d0d?style=for-the-badge&logo=gnubash&logoColor=00cfff"/>
     <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Scapy-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
     <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white"/>
 
 </div>
